@@ -1,0 +1,12 @@
+<section class="content">
+    <div class="form-text">
+        <span class="form-text__title" >Введите текст</span> <input class="form-text__val" ng-model="vm.text" type="text" required>
+    </div>
+    <div class="form-btn">
+        <input class="form-btn__btn" ng-click="vm.checkLang()" type="submit" value="Проверить">
+    </div>
+    <div class="result" ng-show="vm.showRes">
+        <span class="result__title"> Язык введенного текста: </span>
+        <span class="result__cont" ng-bind="vm.lang"></span>
+    </div>
+</section>
